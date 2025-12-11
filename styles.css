@@ -1,0 +1,78 @@
+/* ======================================================
+   Church Circuit — Base Sidebar Theme
+   Primary: #1e3a8a
+   Accent / Hover: #385cc2
+   - Colors the entire left sidebar (top, menu, bottom)
+   - Only affects nav, NOT the main content area
+====================================================== */
+
+/* Entire left sidebar column background */
+#app .v-navigation-drawer,
+#app .hl-left-nav,
+#app .hl-left-nav-top,
+#app .hl_nav,
+#app aside {
+  background-color: #1e3a8a !important;
+}
+
+/* White text/icons inside sidebar only */
+#app .v-navigation-drawer *,
+#app .hl-left-nav *,
+#app .hl-left-nav-top *,
+#app .hl_nav * {
+  color: #ffffff !important;
+}
+
+/* Active menu item highlight */
+#app .v-navigation-drawer .v-list-item--active,
+#app .v-navigation-drawer .router-link-active,
+#app .v-navigation-drawer .router-link-exact-active,
+#app .hl_nav .router-link-active,
+#app .hl_nav .router-link-exact-active {
+  background-color: #385cc2 !important;
+  border-radius: 6px;
+  color: #ffffff !important;
+}
+
+/* Top section: workspace selector + search bar */
+#app .v-navigation-drawer__header,
+#app .hl-left-nav-top,
+#app .location-switcher,
+#app .location-container {
+  background-color: #1e3a8a !important;
+}
+
+#app .v-navigation-drawer__header *,
+#app .hl-left-nav-top *,
+#app .location-switcher *,
+#app .location-container * {
+  color: #ffffff !important;
+}
+
+/* Bottom footer strip (area above Settings button) */
+#app .v-navigation-drawer__append,
+#app .hl-left-nav-bottom,
+#app .left-nav-footer {
+  background-color: #1e3a8a !important;
+}
+
+#app .v-navigation-drawer__append *,
+#app .hl-left-nav-bottom *,
+#app .left-nav-footer * {
+  color: #ffffff !important;
+}
+
+/* Hover override — force exact accent color */
+#app .v-navigation-drawer .v-list-item:hover,
+#app .hl_nav .v-list-item:hover {
+  background-color: #385cc2 !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+}
+
+#app .v-navigation-drawer .v-list-item:hover::before,
+#app .hl_nav .v-list-item:hover::before {
+  background-color: #385cc2 !important;
+  opacity: 1 !important;
+  border-radius: 6px;
+}
