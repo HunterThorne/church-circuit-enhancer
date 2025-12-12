@@ -1,9 +1,8 @@
 /* ======================================================
-   Church Circuit — Base Sidebar Theme
+   CHURCH CIRCUIT — LEFT SIDEBAR THEME (SAFE)
    Primary: #1e3a8a
-   Accent / Hover: #385cc2
-   - Colors the entire left sidebar (top, menu, bottom)
-   - Only affects nav, NOT the main content area
+   Accent + Hover: #385cc2
+   Only targets the left sidebar / nav areas
 ====================================================== */
 
 /* Entire left sidebar column background */
@@ -15,7 +14,7 @@
   background-color: #1e3a8a !important;
 }
 
-/* White text/icons inside sidebar only */
+/* White text/icons INSIDE nav only */
 #app .v-navigation-drawer *,
 #app .hl-left-nav *,
 #app .hl-left-nav-top *,
@@ -23,7 +22,7 @@
   color: #ffffff !important;
 }
 
-/* Active menu item highlight */
+/* Active item */
 #app .v-navigation-drawer .v-list-item--active,
 #app .v-navigation-drawer .router-link-active,
 #app .v-navigation-drawer .router-link-exact-active,
@@ -34,7 +33,7 @@
   color: #ffffff !important;
 }
 
-/* Top section: workspace selector + search bar */
+/* Top area */
 #app .v-navigation-drawer__header,
 #app .hl-left-nav-top,
 #app .location-switcher,
@@ -49,7 +48,7 @@
   color: #ffffff !important;
 }
 
-/* Bottom footer strip (area above Settings button) */
+/* Bottom footer area */
 #app .v-navigation-drawer__append,
 #app .hl-left-nav-bottom,
 #app .left-nav-footer {
@@ -62,14 +61,13 @@
   color: #ffffff !important;
 }
 
-/* Hover override — force exact accent color */
+/* Hover (force exact #385cc2, kill Vuetify overlay tint) */
 #app .v-navigation-drawer .v-list-item:hover,
 #app .hl_nav .v-list-item:hover {
   background-color: #385cc2 !important;
   color: #ffffff !important;
   border-radius: 6px;
 }
-
 #app .v-navigation-drawer .v-list-item:hover::before,
 #app .hl_nav .v-list-item:hover::before {
   background-color: #385cc2 !important;
